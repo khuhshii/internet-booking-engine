@@ -22,8 +22,10 @@ This repository contains the source code for a highly scalable, configurable, an
 
 ### Prerequisites
 
-- Node.js
+#### Frontend
 - npm or yarn
+
+#### Backend
 - Java (JDK 11 or higher)
 - PostgreSQL
 - Azure account
