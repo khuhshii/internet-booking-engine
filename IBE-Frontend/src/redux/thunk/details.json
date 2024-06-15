@@ -1,0 +1,35 @@
+{
+  "room": {
+    "name": "Executive Room",
+    "guests": "2 adults, 1 child",
+    "checkInDate": "9 May 2022",
+    "checkOutDate": "16 May 2022",
+    "packageDetails": "$150 Dining Credit Package",
+    "amountDetails": "Spend $10 every night you stay and earn $150 in dining credit at the resort.",
+    "finalAmount": "$XXX/night total"
+  },
+  "guest": {
+    "firstName": "first name",
+    "lastName": "last name",
+    "phone": "1234567891",
+    "email": "khushi6452@gmail.com"
+  },
+  "billing": {
+    "firstName": "first name",
+    "lastName": "last name",
+    "mailingAddress1": "303, sample addresss",
+    "mailingAddress2": "305, sample addresss",
+    "country": "India",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "zip": "440009",
+    "phone": "7020341662",
+    "email": "khushi6452@gmail.com"
+  },
+  "payment": {
+    "cardNumber": "1122334455667788",
+    "expMM": "01",
+    "expYY": "2005",
+    "cvvCode": "657"
+  }
+}

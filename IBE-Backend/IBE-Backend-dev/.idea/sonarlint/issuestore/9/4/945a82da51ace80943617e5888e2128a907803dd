@@ -1,0 +1,14 @@
+
+w	java:S116 "VRename this field "DATE_FORMAT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ã—«úÿÿÿÿ8Á“®Ÿè1
+C
+java:S1170 "!Make this final field static too.( ã—«úÿÿÿÿ8Á“®Ÿè1
+H
+java:S11688"+Return an empty collection instead of null.(¥¹ï8Ì“®Ÿè1
+B
+java:S1905T"&Remove this unnecessary cast to "int".(ĞàÕp8Ğ“®Ÿè1
+C
+java:S1905^"&Remove this unnecessary cast to "int".(·É‘…8Ò“®Ÿè1
+p
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(ì€¶©8ä“®Ÿè1
+I
+java:S1168Ë"+Return an empty collection instead of null.(¥¹ï8í“®Ÿè1

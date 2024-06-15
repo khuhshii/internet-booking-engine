@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-app {
+  /* flex: 1; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-footer{
+    .bot {
+      z-index: 10;
+      bottom: 78px;
+      right : 0;
+      position: fixed;
+      width: 350px;
+    }
+
+
+.btn {
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 18px;
+  float: right;
+  width: 100%;
+  padding: 8px;
+  background-color: #120639;
+  color: white;
+}
+}

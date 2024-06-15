@@ -1,0 +1,341 @@
+@import "./constants/variables";
+
+.header {
+  display: flex;
+  font-family: $fontFamily;
+  align-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0px 0px 10px grey;
+  .header-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading-subheading {
+      // background-color: green;
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      .heading {
+        padding-left: 15px;
+        font-weight: 800;
+        color: #382e58;
+        .linkToHome {
+          text-decoration: none;
+          color: inherit;
+          padding-bottom: 0;
+        }
+        img {
+          display: flex;
+          align-items: center;
+          height: 40px;
+        }
+      }
+
+      .subheading {
+        padding-left: 15px;
+        padding-top: 3px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 400;
+        color: #52528b;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        width: 30%;
+        .subheading {
+          display: none;
+        }
+      }
+    }
+    .middle {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      // background-color: red;
+      text-align: center;
+      width: 150px;
+      .bookings {
+        font-size: 18px;
+        border: none;
+        display: flex;
+        // display: none;
+        cursor: pointer;
+        color: black;
+        font-weight: 600;
+        @media screen and (max-width: 522px) {
+          // font-size: 15px;
+          display: none;
+        }
+      }
+    }
+    .right-section {
+      // background-color: yellow;
+      color: #120639;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 25%;
+      // @media screen and (max-width: 800px) {
+      //   width: 15%;
+      // }
+      .bookings {
+        padding-top: 3px;
+
+        font-size: 18px;
+        border: none;
+        display: flex;
+        color: black;
+        font-weight: 600;
+      }
+      .language-currency {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .language-select {
+          appearance: inherit;
+          -webkit-appearance: none;
+          color: #120639;
+        }
+
+        .currency-select {
+          appearance: inherit;
+          -webkit-appearance: none;
+          color: #120639;
+        }
+
+        .language,
+        .currency {
+          font-size: 18px;
+          border: none;
+          display: flex;
+          outline: none;
+          background-color: white;
+        }
+      }
+
+      .custom-language-currency {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        color: #120639;
+        .custom-language {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          color: #120639;
+          position: relative;
+          width: 40%;
+          .custom-language-dropdown {
+            color: #120639;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            font-size: 18px;
+            border: none;
+          }
+
+          .custom-language-drop-down-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            border: 1px solid #c1c2c2;
+            position: absolute;
+            top: 1.5rem;
+            .language-drop-down-option {
+              display: block;
+              width: 100%;
+              background-color: white;
+              border: none;
+              font-size: 18px;
+              padding: 5px;
+            }
+            .language-drop-down-option:hover {
+              background-color: #120639;
+              color: white;
+            }
+          }
+        }
+
+        .custom-language-dropdown:hover {
+          cursor: pointer;
+        }
+
+        .custom-currency-dropdown:hover {
+          cursor: pointer;
+        }
+
+        .custom-currency {
+          display: flex;
+          font-size: 18px;
+          color: #120639;
+          position: relative;
+          width: 50%;
+          justify-content: center;
+          .custom-currency-dropdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #120639;
+            background-color: white;
+            border: none;
+            font-size: 18px;
+
+            .currency-symbol {
+              margin-right: 2px;
+            }
+          }
+
+          .custom-currency-drop-down-menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 1.5rem;
+            border: 1px solid c1c2c2;
+            .currency-drop-down-option {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              background-color: white;
+              border: none;
+              font-size: 18px;
+              padding: 5px;
+            }
+            .currency-drop-down-option:hover {
+              background-color: #120639;
+              color: white;
+            }
+          }
+        }
+      }
+      .login-section {
+        display: flex;
+        align-items: center;
+        .login {
+          background-color: #27276d;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 8px 14px;
+          cursor: pointer;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        width: 35%;
+      }
+      @media screen and (max-width: 700px) {
+        width: 40%;
+      }
+
+      @media screen and (max-width: 522px) {
+        display: none;
+      }
+    }
+  }
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+
+    .nav-btn {
+      padding-right: 15px;
+      visibility: hidden;
+      font-size: 24px;
+      @media screen and (max-width: 522px) {
+        border: none;
+        background-color: white;
+        visibility: visible;
+      }
+    }
+    .mobile-view {
+      display: none;
+      @media screen and (max-width: 522px) {
+        display: block;
+      }
+      .language {
+        margin-left: 5px;
+      }
+
+      .language-select {
+        appearance: inherit;
+        -webkit-appearance: none;
+        color: #120639;
+      }
+
+      .currency-select {
+        appearance: inherit;
+        -webkit-appearance: none;
+        color: #120639;
+      }
+
+      .bookings {
+        font-size: 16px;
+        border: none;
+        display: flex;
+        cursor: pointer;
+        font-weight: 400;
+        margin-top: 5px;
+        padding: 0.5rem;
+        background-color: #27276d;
+        border-radius: 4px;
+        color: white;
+        margin: 5px;
+      }
+    }
+
+    .language-currency {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 10;
+
+      @media screen and (max-width: 522px) {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+      }
+
+      .language,
+      .currency {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+
+        .select-mobile {
+          padding-left: 0;
+        }
+      }
+      .login-section {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login {
+          background-color: #27276d;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 8px 14px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

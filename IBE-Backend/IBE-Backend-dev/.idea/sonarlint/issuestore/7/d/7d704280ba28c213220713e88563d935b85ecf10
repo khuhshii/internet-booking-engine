@@ -1,0 +1,7 @@
+
+l
+java:S1192R"JDefine a constant instead of duplicating this literal "room_type" 6 times.(§ΗΆ€όÿÿÿÿ8Δλίημ1
+
+java:S1488e"pImmediately return this expression instead of assigning it to the temporary variable "roomDetailWithAverageDTO".(ιΧύξ8µηημ1
+]	java:S125f"<This block of commented-out lines of code should be removed.(ή½ϋÿÿÿÿ8”μίημ1
+]	java:S125j"<This block of commented-out lines of code should be removed.(θ±δώÿÿÿÿ8¶Ύζημ1

@@ -1,0 +1,346 @@
+.booking-confirmation {
+    min-height: calc(100vh - 142px);
+    width: 100%;
+
+    .booking-confirmation-container {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+
+        .upcoming-reservation {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+            .booking-id {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .print-email {
+                font-size: 16px;
+                display: flex;
+                width: 100px;
+                justify-content: space-between;
+                color: #006eff;
+            }
+        }
+
+        .room-details {
+            margin-top: 20px;
+            border: 1px solid #c1c2c2;
+            border-radius: 5px;
+            padding: 30px 20px;
+            .room-heading-cancel-room {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .room-name-guest-details {
+                    width: 80%;
+                    display: flex;
+                    
+
+                    @media screen and (max-width:"900px") {
+                        flex-wrap: wrap;
+                    }
+                    .room-name {
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-right: 15px;
+                    }
+                    align-items: baseline;
+
+                    .guest-details {
+                        display: flex;
+                        .guest-image {
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                            margin-right: 5px;
+                        }
+
+                        .guest-names {
+                            font-size: 14px;
+                            color: #5d5d5d;
+                        }
+                    }
+                }
+
+                .cancel-room {
+                    font-size: 16px;
+                    color: #006eff;
+                }
+            }
+
+            .room-image-booking-information {
+                margin-top: 15px;
+                display: flex;
+                
+                @media screen and (max-width:1150px){
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .room-image {
+                    margin-right: 30px;
+
+                    img{
+                        width: 100%;
+                       
+                    }
+                    @media screen and (max-width:1150px){
+                        margin-right: 0;
+                    }
+                    @media screen and (max-width:450px){
+                        img{
+                            width: 100%;
+
+                        }
+                    }
+                }
+
+                .booking-information {
+                    width: 100%;
+
+                    @media screen and (max-width:1150px){
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .check-in-check-out {
+                        display: flex;
+
+                        .check-in {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 106px;
+                            align-items: center;
+                            padding: 10px;
+                            border: 1px solid #858685;
+                            margin-right: 10px;
+                            border-radius: 5px;
+
+                            .name {
+                                font-size: 14px;
+                                color: #858685;
+                            }
+
+                            .date {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #2f2f2f;
+                            }
+
+                            .month-year {
+                                font-size: 16px;
+                                color: #2f2f2f;
+                            }
+                        }
+
+                        .check-out {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 106px;
+                            align-items: center;
+                            padding: 10px;
+                            border: 1px solid #858685;
+                            border-radius: 5px;
+
+                            .name {
+                                font-size: 14px;
+                                color: #858685;
+                            }
+
+                            .date {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #2f2f2f;
+                            }
+
+                            .month-year {
+                                font-size: 16px;
+                                color: #2f2f2f;
+                            }
+                        }
+                    }
+
+                    .package-amount-details {
+                        margin-top: 20px;
+                        width: 70%;
+                        @media screen and (max-width:1150px){
+                            width: 100%;
+                        }
+
+                        .package-details {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                        .amount-details {
+                            margin-top: 5px;
+                            font-size: 16px;
+                            line-height: 22.4px;
+                        }
+                    }
+
+                    .package-final-amount {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+                        @media screen and (max-width:1150px){
+                            width: 100%;
+                            
+                        }
+
+                        @media screen and (max-width:600px){
+                            flex-wrap: wrap;
+                            
+                        }
+
+                        .cancelation-policy {
+                            font-size: 16px;
+                        }
+
+                        .final-amount {
+                            width: 30%;
+                            text-align: right;
+                            font-size: 20px;
+                            word-break: break-all;
+                            @media screen and (max-width:600px){
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                padding-bottom: 40px;
+                border-bottom: 1px solid #c1c2c2;
+            }
+
+            .room-total-summary {
+                margin-top: 10px;
+
+                .room-details-drop-down {
+                    display: flex;
+                    align-items: center;
+
+                    .drop-down-image {
+                        margin-right: 10px;
+                    }
+
+                    .room-heading {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                .room-total-summary-details {
+                    padding-left: 35px;
+                    width: 100%;
+                    padding-bottom: 10px;
+
+                    .indv-detail {
+                        display: flex;
+                        width: 100%;
+                        margin-top: 5px;
+                        justify-content: space-between;
+
+                        .detail-name {
+                            color: #5d5d5d;
+                            font-size: 16px;
+                        }
+
+                        .amount {
+                            font-size: 20px;
+                            color: #2f2f2f;
+                        }
+                    }
+
+                    .total-for-stay {
+                        margin-top: 20px;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .detail-name {
+                            color: #5d5d5d;
+                            font-size: 16px;
+                        }
+                        .amount {
+                            font-size: 20px;
+                            color: #2f2f2f;
+                        }
+                    }
+                }
+
+            }
+
+            .booking-details-column {
+                margin-top: 10px;
+                border-bottom: 1px solid #c1c2c2;
+                padding-bottom: 10px;
+                .booking-details-drop-down {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .booking-drop-down-image {
+                    margin-right: 10px;
+                }
+
+                .booking-heading {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+
+                .booking-option-details {
+                    padding-left: 35px;
+                    width: 100%;
+                    padding-bottom: 10px;
+
+                    .indv-detail {
+                        display: flex;
+                        width: 100%;
+                        margin-top: 5px;
+                        justify-content: space-between;
+
+                        .detail-name {
+                            color: #5d5d5d;
+                            font-size: 16px;
+                        }
+
+                        .amount {
+                            font-size: 16px;
+                            color: #2f2f2f;
+                            text-align: right;
+                        }
+                    }
+
+                    .total-for-stay {
+                        margin-top: 20px;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .detail-name {
+                            color: #5d5d5d;
+                            font-size: 16px;
+                        }
+                        .amount {
+                            font-size: 20px;
+                            color: #2f2f2f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

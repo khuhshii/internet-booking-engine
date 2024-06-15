@@ -1,0 +1,17 @@
+
+‘
+java:S1488¶"nImmediately return this expression instead of assigning it to the temporary variable "roomAverageMinRoomsDTO".(Εζδύÿÿÿÿ8ς›ψημ1
+t
+java:S3776""RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(τψΚ©όÿÿÿÿ8ό›ψημ1
+p
+java:S1602+"SRemove useless curly braces around statement and then remove useless return keyword(ªλΕ8ÿ›ψημ1
+p
+java:S16021"SRemove useless curly braces around statement and then remove useless return keyword(ρΦιι8ÿ›ψημ1
+|
+java:S2142³"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ό΄Β8€ψημ1
+]	java:S1258"<This block of commented-out lines of code should be removed.(ΰϊΉ„ÿÿÿÿÿ8€ψημ1
+X	java:S125A"<This block of commented-out lines of code should be removed.(ζΗΪΠ8ψημ1
+F
+java:S1481n")Remove this unused "date" local variable.(΄Δÿτ8†ψημ1
+θ
+java:S6541""ΕA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 94 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 44 to 6.(τψΚ©όÿÿÿÿ8ψημ1

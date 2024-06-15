@@ -1,0 +1,299 @@
+
+    
+    .date-dropdown-container {
+      position: absolute;
+      background-color: #fff;
+      z-index: 1;
+      width: 56rem;
+      padding: 1.5rem 1.25rem;
+      border: 1px solid #C1C2C2;
+      border-radius: 4px;
+      box-sizing: border-box;
+      
+
+      @media screen and  (max-width:980px) {
+        width: 23.5rem;
+        padding-bottom: 0;
+        left:-30px;
+      }
+
+      @media screen and  (max-width:380px) {
+        width: 19.5rem;
+        left:0px
+      }
+      @media screen and  (max-width:320px) {
+        left:-20px
+      }
+      .calender {
+        @media screen and  (max-width:380px) {
+          border-bottom: none;
+        }
+        border-bottom: 1px solid #C1C2C2;
+        .rdrDateRangePickerWrapper {
+          width: 100%;
+          background-color: white;
+          .rdrCalendarWrapper {
+            width: 100%;
+            .rdrMonthAndYearWrapper {
+              padding: 0;
+              position: absolute;
+              top: 0.3rem;
+              left: 0;
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              .rdrNextPrevButton {
+                background-color: #c1c2c2;
+                position: relative;
+                bottom: 5px;
+              }
+              .rdrPprevButton{
+                position: relative;
+                right: 5px;
+              }
+            }
+            .rdrMonths {
+              display: flex;
+              justify-content: space-between;
+              .rdrMonth {
+                padding: 0;
+                width: 26.5rem;
+
+                @media screen and  (max-width:980px) {
+                    width: 26.5rem;
+                    
+                  }
+                @media screen and  (max-width:380px) {
+                    width: 20rem;
+                  }
+                
+                .rdrMonthName {
+                  text-align: center;
+                  padding: 0;
+                  font-size: 1rem;
+                  padding-left: 15px;
+                  @media screen and  (max-width:980px) {
+                    padding-left: 0;
+                    text-align: center;
+                  }
+                }
+                .rdrWeekDays {
+                  font-size: 1rem;
+                }
+                .rdrDays {
+                  .rdrDay {
+                    width: 3.125rem;
+                    height: 3.375rem;
+                    margin: 0 0.3125rem;
+                    margin-bottom: 0.25rem;
+
+                    @media screen and  (max-width:980px) {
+                        width: 37.5px;
+                        margin-bottom: 0;
+                        padding: 3px;
+                      }
+
+                      @media screen and  (max-width:380px) {
+                        width: 28px;
+                        height: 2rem;
+                      }
+                    .rdrDayNumber {
+                      height: 100%;
+                      .date-price-container {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        line-height: initial;
+                        justify-content: flex-start;
+                        align-items: center;
+                        justify-content: center;
+                        .date {
+                          font-size: 1rem;
+                          font-weight: 700;
+                        }
+                        .price,
+                        .discounted-price {
+                          font-size: 0.875rem;
+                        }
+                      }
+                    }
+                    .rdrDayNumber:hover {
+                      background-color: #26266D;
+                      .date-price-container {
+                        span {
+                          color: white;
+                        }
+                      }
+                    }
+                    .rdrInRange {
+            
+                      background-color: transparent;
+                      height: 3.375rem;
+                      border-radius: 0;
+
+                      @media screen and  (max-width:380px) {
+                        height: 2rem;
+                      }
+                    }
+                    .rdrInRange ~ .rdrDayNumber {
+                      background-color: #c1c2c2;
+                      .date-price-container {
+                        span {
+                          color: black;
+                        }
+                      }
+                    }
+                    .rdrInRange ~ .rdrDayNumber:hover{
+                      background-color: #26266d;
+                      .date-price-container{
+                        span{
+                          color: white;
+                        }
+                      }
+                    }
+                    .rdrStartEdge,
+                    .rdrEndEdge {
+                      background-color:transparent;
+                      border-radius: 0;
+                      height: 3.375rem;
+
+                      @media screen and  (max-width:380px) {
+                        height: 2rem;
+                      }
+                    }
+                    .rdrStartEdge ~ .rdrDayNumber, 
+                  .rdrEndEdge ~ .rdrDayNumber{
+                    background-color: #26266d;
+                    color: black;
+                  }
+                    .rdrDayStartPreview,
+                    .rdrDayEndPreview,
+                    .rdrDayInPreview {
+                      border: none;
+                    }
+                  }
+                }
+                .rdrDayPassive,
+                .rdrDayDisabled {
+                  color: #D6CBCB;
+                  background: transparent;
+                  .rdrDayNumber{
+                    background-color: transparent !important;
+                    .date-price-container{
+                      span{
+                        color: #d6cbcb !important;
+                      }
+                    }
+                  }
+                }
+               
+                .rdrDayDisabled {
+                  .date-price-container {
+                    .price,
+                    .discounted-price {
+                      display: none;
+                    }
+                  }
+
+                  .rdrDayNumber:hover{
+                    background-color: transparent !important;
+                    span {
+                      color: #C1C2C2 !important;
+                    }
+                  }
+
+                }
+                .rdrDayDisabled:hover {
+                  background-color: white;
+                  color: black;
+                  .rdrDayNumber:hover {
+                    background-color: white;
+                    .date-price-container {
+                      span {
+                        color: #d6cbcb;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .rdrDefinedRangesWrapper,
+          .rdrDateDisplayWrapper,
+          .rdrMonthAndYearPickers {
+            display: none;
+          }
+        }
+        .rdrDay:has(> .rdrDayEndPreview),
+        .rdrDay:has(> .rdrDayStartPreview) {
+          .rdrDayNumber {
+            background-color: #26266D;
+          }
+        }
+        .rdrDay:has(> .rdrDayInPreview) {
+          .rdrDayNumber {
+            background-color: #C1C2C2;
+          }
+        }
+      }
+      .message-button{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .minimum-rate-message{
+          font-size: 18px;
+          padding: 1rem;
+          margin-top: 10px;
+          font-weight: 700;
+        }
+      }
+      .apply-btn-container {
+        @media screen and  (max-width:980px) {
+          display: flex;
+         justify-content: center;
+         width: 100%;
+         align-items: center;
+        }
+        padding: 1.25rem 0.75rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-end;
+        .apply-btn {
+          cursor: pointer;
+          font-size: 0.875rem;
+          font-weight: 700;
+          background: transparent;
+          background-color: #26266D;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          padding: 0.75rem 1.25rem;
+        }
+        .end-date-select-message{
+          color: #D0182B;
+          width: 171px;
+          font-size: 14px;
+          @media screen and  (max-width:980px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .room-result{
+      @media screen and (max-width:"1144px") {
+        width: 29rem;
+      }
+      @media screen and (max-width:"980px") {
+        width: 24rem;
+        left:25px
+      }
+      @media screen and (max-width:"980px") {
+        width: 24rem;
+        // position: absolute;
+        position: absolute;
+        right: 0;
+      }
+    }

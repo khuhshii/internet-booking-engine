@@ -1,0 +1,9 @@
+
+b	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(ÁÔó¸8õÓºí1
+a	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(Ò¨”.8öÓºí1
+r	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨¶§ªúÿÿÿÿ8öÓºí1
+€
+java:S2142R"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ÀãÑéÿÿÿÿÿ8¯Óºí1
+L	java:S106>"+Replace this use of System.out by a logger.(µÚÊşÿÿÿÿ8ÆœÚºí1
+G	java:S106K"+Replace this use of System.out by a logger.(Ğã°È8æıÛºí1
+G	java:S106T"+Replace this use of System.out by a logger.(ñ·¤¬8çıÛºí1

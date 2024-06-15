@@ -1,0 +1,33 @@
+
+T
+java:S1854U"7Remove this useless assignment to local variable "zip".(áİÒ8Ùç×Üí1
+U
+java:S1854T"9Remove this useless assignment to local variable "state".(‚àì~8Ùç×Üí1
+Z
+java:S1854S"8Remove this useless assignment to local variable "city".(ıÇëüÿÿÿÿ8Ùç×Üí1
+]	java:S1252"<This block of commented-out lines of code should be removed.(Öçú±úÿÿÿÿ8İÎ×Üí1
+K
+java:S1481S")Remove this unused "city" local variable.(ıÇëüÿÿÿÿ8Ûç×Üí1
+F
+java:S1481T"*Remove this unused "state" local variable.(‚àì~8Ûç×Üí1
+E
+java:S1481U"(Remove this unused "zip" local variable.(áİÒ8Ûç×Üí1
+]	java:S125W"<This block of commented-out lines of code should be removed.(ÇÈ€ñùÿÿÿÿ8Ûç×Üí1
+a
+java:S1128"DRemove this unused import 'com.fasterxml.jackson.databind.JsonNode'.(–×ª8ßç×Üí1
+}
+java:S1128"[Remove this unused import 'com.kdu.ibe.exception.customExceptions.InvalidZipCodeException'.(äšÆÿÿÿÿÿ8àç×Üí1
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8àç×Üí1
+a
+java:S1128"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8àç×Üí1
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8àç×Üí1
+c
+java:S1128"ARemove this unused import 'org.springframework.http.HttpHeaders'.(ãŸñ×úÿÿÿÿ8àç×Üí1
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8àç×Üí1
+R
+java:S1068 "0Remove this unused "restTemplate" private field.(Õ«Îòÿÿÿÿÿ8æÎ×Üí1
+T
+java:S1144("7Remove this unused private "buildUrlWithParams" method.(ˆÃĞâ8æÎ×Üí1

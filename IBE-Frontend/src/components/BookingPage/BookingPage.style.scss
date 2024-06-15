@@ -1,0 +1,350 @@
+.main {
+  min-height: 100vh;
+  color: black;
+  .timer{
+    background-color: #26276c;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .user-flow-div {
+    height: 92px;
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .MuiSvgIcon-root {
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+    }
+    .Mui-active circle {
+      fill: #d0182b;
+    }
+
+    .Mui-completed path {
+      fill: #26266d;
+    }
+
+    .MuiStepConnector-root {
+      margin-top: 3px;
+    }
+
+    .MuiStepLabel-label {
+      margin-top: 8px;
+    }
+
+    .user-flow-content {
+      width: 50%;
+      height: 60px;
+
+      @media screen and (max-width: 525px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 795px) {
+        width: 80%;
+      }
+    }
+  }
+
+  .form-itenary-section {
+    margin: 2rem;
+    display: flex;
+    .form-section {
+      margin-left: 1rem;
+      width: 70%;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      .form-heading {
+        padding: 10px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .form-subsection {
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        background-color: #eff0f1;
+        border-radius: 3px;
+      }
+      .travellers-info {
+        display: flex;
+      }
+      .billing-info {
+        display: none;
+      }
+      .payment-info {
+        display: none;
+      }
+      .info-style {
+        flex-direction: column;
+        .btn-div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          font-size: 16px;
+          padding: 10px;
+          span {
+            font-size: 22px;
+          }
+          .btn-next {
+            margin: 10px 0 20px 0;
+            width: max-content;
+            padding: 10px;
+            background-color: #120639;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          .btn-prev {
+            margin: 10px 10px 20px 0;
+            width: max-content;
+            background-color: white;
+            padding: 10px;
+            color: #120639;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+        }
+      }
+    }
+    
+
+    .itenary {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .trip-iteanary-container {
+        @media screen and (max-width: "1000px") {
+          display: none !important;
+        }
+
+        .trip-itenary {
+          margin-top: 3rem;
+          width: 100%;
+          background-color: #eff0f1;
+          padding: 1rem;
+          font-size: 16px;
+          .itenary-heading {
+            font-size: 20px;
+            font-weight: 700;
+          }
+
+          .hotelname-remove {
+            margin-top: 5px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .remove {
+              color: #006eff;
+              border: none;
+            }
+          }
+          .date-details {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          .sub-container-1 {
+            .item {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              margin-top: 5px;
+            }
+            padding-bottom: 15px;
+
+            border-bottom: 1px solid #c1c2c2;
+          }
+
+          .sub-container-2 {
+            .item {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              margin-top: 5px;
+            }
+            padding-bottom: 15px;
+
+            border-bottom: 1px solid #c1c2c2;
+          }
+
+          .sub-container-3 {
+            .item {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              margin-top: 5px;
+            }
+            padding-bottom: 15px;
+
+            border-bottom: 1px solid #c1c2c2;
+          }
+
+          .checkout {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            #checkout {
+              padding: 1rem;
+              border: 2px solid #120639;
+              color: #120639;
+            }
+          }
+        }
+      }
+      .need-help-container {
+        padding: 10px 20px;
+        margin: 20px 0;
+        background-color: #eff1f0;
+        line-height: 170%;
+        @media screen and (max-width: "1000px") {
+          display: none !important;
+        }
+        .heading {
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .number {
+          padding-top: 10px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .time {
+          font-size: 14px;
+          color: rgb(85, 85, 85);
+        }
+      }
+    }
+  }
+  .feedback-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    .feedback {
+      width: max-content;
+      padding: 10px;
+      background-color: #120639;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+.error-message{
+  color: rgb(194, 0, 0);
+  margin-top: 2px;
+  font-size: 13px;
+}
+.select-div{
+  margin-top: 2px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid#c1c2c2;
+  border-radius: 3px;
+  background-color: white;
+}
+@media screen and (max-width: "1000px") {
+  .main {
+    .form-itenary-section {
+      margin: 0.5rem 1rem;
+      display: flex;
+
+      .form-section {
+        width: 100%;
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
+        .form-heading {
+          padding: 10px;
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .form-subsection {
+          font-size: 20px;
+          display: flex;
+          width: 100%;
+          padding: 10px;
+          background-color: #eff0f1;
+          border-radius: 3px;
+        }
+        .travellers-info {
+          display: flex;
+          flex-direction: column;
+          .btn-div {
+            display: flex;
+            justify-content: flex-end;
+            .btn-next {
+              margin: 10px 0 20px 0;
+              width: max-content;
+              padding: 10px;
+              background-color: #120639;
+              color: white;
+              border: none;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+
+      .itenary {
+        display: none;
+        background-color: green;
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+        .trip-iteanary-container {
+          @media screen and (max-width: "1000px") {
+            display: none !important;
+          }
+        }
+        .need-help-container {
+          display: flex;
+
+          .heading {
+            font-size: 20px;
+            font-weight: 700;
+          }
+          .number {
+            padding-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+          }
+          .time {
+            font-size: 14px;
+            color: rgb(85, 85, 85);
+          }
+        }
+      }
+    }
+    .feedback-div {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      .feedback {
+        width: max-content;
+        padding: 10px;
+        background-color: #120639;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "payment_info": {
+    "taxes_and_surcharges": {
+      "tax": 18,
+      "vat": 10.0
+    },
+    "percentage_due_at_resort": 60
+  }
+}

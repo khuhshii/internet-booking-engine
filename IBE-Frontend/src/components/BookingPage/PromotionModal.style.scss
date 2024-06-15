@@ -1,0 +1,40 @@
+.details {
+  padding: 10px;
+  margin: 10px 0;
+  p {
+    line-height: 170%;
+  }
+  .total {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-pricemodal{
+  color: rgb(61, 61, 61);
+  // min-width: 300px;
+  font-size: 15px;
+  // background-color: green;
+  // margin: 10px;
+  padding: 10px;
+  .name{
+    margin: 8px 0;
+    line-height: 170%;
+  }
+  .promo{
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  .rates{
+    font-size: 15px;
+    padding: 5px 0;
+    min-width: 300px;
+    .indiv-rates{
+      padding: 2px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

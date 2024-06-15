@@ -1,0 +1,111 @@
+.ratingsRoom {
+    width: 58%;
+    padding-right: 20px;
+    @media screen and (max-width: "1170px") {
+      width: 100% !important;
+    }
+    .rating-heading {
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    .rating-details {
+      display: flex;
+      margin: 10px 0;
+      padding: 10px;
+      box-shadow: 0px 0px 5px rgb(216, 216, 216);
+      border-radius: 2px;
+      .average-rating {
+        border-right: 1px solid rgb(216, 216, 216);
+        width: 30%;
+        //   background-color: red;
+        display: flex;
+        padding: 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .rating-bars {
+        width: 70%;
+        //   background-color: palevioletred;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .rating-count {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 5px;
+          .bar-container {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            margin-left: 10px;
+            position: relative;
+            @media screen and (max-width: 500px) {
+              width: 100px;
+            }
+            .full-bar {
+              height: 6px;
+              background-color: rgb(148, 139, 139);
+              width: 100%;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            .bar {
+              height: 6px;
+              background-color: #f8c82c;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  
+    .rating-container {
+      overflow-y: auto;
+      max-height: 200px;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        width: 4px; /* Set the width of the scrollbar */
+      }
+  
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background-color: #888; /* Color of the scrollbar handle */
+        border-radius: 4px; /* Rounded corners */
+      }
+  
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Color of the scrollbar handle on hover */
+      }
+      padding: 10px;
+      margin: 10px 0;
+  
+      .review {
+        margin: 10px 0;
+        display: flex;
+        padding: 10px;
+        box-shadow: 0px 0px 5px rgb(183, 182, 182);
+        .rating {
+          width: 30%;
+          @media screen and (max-width: 500px) {
+            width: 48%;
+          }
+        }
+        .review-text {
+          width: 70%;
+          @media screen and (max-width: 500px) {
+            width: 52%;
+          }
+        }
+      }
+    }
+  }
+  

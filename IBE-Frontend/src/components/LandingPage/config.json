@@ -1,0 +1,11 @@
+{
+  "properties": ["Property 1", "Property 2", "Property 3"],
+  "fields": [{"title":"Guests","active":true}, {"title":"Rooms","active":true}, {"title":"accesible","active":true}],
+  "Guests": [
+    { "name": "Adults", "age": "Age 18+", "active":true },
+    { "name": "Teens", "age": "Age 13-17" ,"active":true},
+    { "name": "Kids", "age": "Age 0-12","active":true }
+  ],
+  "Rooms": 3,
+  "max_people_per_room":3
+}

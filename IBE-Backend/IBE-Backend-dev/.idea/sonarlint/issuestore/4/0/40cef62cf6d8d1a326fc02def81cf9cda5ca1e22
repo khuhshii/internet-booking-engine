@@ -1,0 +1,10 @@
+
+‰
+java:S1488*"gImmediately return this expression instead of assigning it to the temporary variable "responseEntity1".(—ÔÞ¡ùÿÿÿÿ8³´šæä1
+X	java:S125"<This block of commented-out lines of code should be removed.(¿ôÇº8ù¼Ü¹ä1
+X	java:S125)"<This block of commented-out lines of code should be removed.(¿ö°ð8—„šæä1
+]	java:S125-"<This block of commented-out lines of code should be removed.(Ó‹Øªüÿÿÿÿ8è´šæä1
+W
+java:S1128":Remove this unused import 'com.kdu.ibe.entity.Properties'.(ÓœÔ¦8é´šæä1
+R
+java:S1068"0Remove this unused "objectMapper" private field.(­ãÐåüÿÿÿÿ8é´šæä1

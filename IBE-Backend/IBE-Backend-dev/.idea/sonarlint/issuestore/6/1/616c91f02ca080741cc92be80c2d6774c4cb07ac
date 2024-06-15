@@ -1,0 +1,12 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(£ÿ­Ìúÿÿÿÿ8¡¤Ä„æ1
+k
+java:S1128"NRemove this unused import 'com.kdu.ibe.dto.response.RoomAvailabilityResponse'.(¬ÔŞ8µƒâçì1
+l
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8µƒâçì1
+s
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ8µƒâçì1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8µƒâçì1
+]
+java:S1068";Remove this unused "roomAvailabilityService" private field.(ÏØ¼‚ùÿÿÿÿ8¶ƒâçì1

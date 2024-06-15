@@ -1,0 +1,187 @@
+.myBookings {
+  min-height: calc(100vh - 143.5px);
+  width: 100%;
+
+  .booking-message {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .all-bookings-container {
+    width: 90%;
+    margin: auto;
+
+    .login-first{
+      border: 1px solid gray;
+      padding: 1rem;
+      width: 97%;
+      text-align: center;
+      color: white;
+      background-color: #27276d;
+      font-size: 20px;
+      margin-top: 20px;
+      
+    }
+
+    .indv-card {
+      margin: 25px 0;
+      box-shadow: 0px 0px 10px rgb(151, 151, 151);
+
+      border-radius: 4px;
+      padding: 1rem;
+      display: flex;
+      font-size: 19px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      &:hover {
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3px) scale(1.01);
+      }
+
+      .left-division {
+        display: flex;
+        width: 35%;
+        img {
+          display: flex;
+          width: 100%;
+          border-radius: 4px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .right-division {
+        // background-color: grey;
+        margin-left: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .room-details {
+          //   background-color: red;
+          display: flex;
+
+          flex-direction: column;
+
+          .Booking-details {
+            margin: 10px;
+            // background-color: green;
+            font-size: 24px;
+            font-weight: 600;
+          }
+
+          .details {
+            font-size: 21px;
+            // background-color: #120639;
+            line-height: 120%;
+            border-radius: 4px;
+            color: rgb(55, 55, 55);
+          }
+        }
+
+        .date-details {
+          display: flex;
+
+          .check-in-date {
+            padding: 25px 0;
+            text-align: center;
+            width: 35%;
+            // background-color: #120639;
+            padding: 1rem;
+            border-radius: 4px;
+            color: rgb(55, 55, 55);
+            margin: 0px 10px;
+            border: 1px solid rgb(131, 131, 131);
+
+            //   box-shadow: 0px 0px 10px rgb(151, 151, 151);
+          }
+        }
+
+        .cost-details {
+          //   background-color: yellow;
+          display: flex;
+          justify-content: flex-end;
+          align-content: flex-end;
+          width: 50%;
+          .cost {
+            // margin: 10px 0;
+            background-color: #27276d;
+            padding: 10px;
+            border-radius: 4px;
+            color: white;
+            height: fit-content;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .myBookings {
+    min-height: calc(100vh - 143.5px);
+    width: 100%;
+
+    .all-bookings-container {
+      width: 90%;
+      margin: auto;
+      .indv-card {
+
+        flex-direction: column;
+        .left-division {
+          display: flex;
+          width: 100%;
+          img {
+            display: flex;
+            width: 100%;
+            height: min-content;
+            border-radius: 4px;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .right-division {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .myBookings {
+    .all-bookings-container {
+      width: 90%;
+      margin: auto;
+      .indv-card {
+        .right-division {
+          flex-direction: column;
+          .date-details {
+            display: flex;
+            justify-content: space-between;
+            .check-in-date {
+              text-align: center;
+              width: 45%;
+              // background-color: #120639;
+              padding: 1rem;
+              border-radius: 4px;
+              color: grey;
+              margin: 0px 10px;
+              border: 1px solid rgb(131, 131, 131);
+            }
+          }
+          .cost-details {
+            width: 100%;
+            margin-left: 10px;
+            justify-content: flex-end;
+            .cost {
+              margin-top: 20px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+
+j
+java:S3824_"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(ëóøûýÿÿÿÿ8êˆ¼šê1
+t
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(­”±ìýÿÿÿÿ8…‰¼šê1
+]	java:S125R"<This block of commented-out lines of code should be removed.(Àšöþÿÿÿÿ8‰‰¼šê1
+X	java:S125Y"<This block of commented-out lines of code should be removed.(…ÒÇ¤8‰‰¼šê1
+]	java:S125b"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Š‰¼šê1
+B
+java:S1168Œ"$Return an empty map instead of null.(¥¹ï8û Öšê1
+[
+java:S1128">Remove this unused import 'com.kdu.ibe.dto.rates.RoomRateDto'.(ÚÿŽÛ8ÿö¥Ãí1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8ÿö¥Ãí1
